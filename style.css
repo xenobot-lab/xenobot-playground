@@ -1,0 +1,4 @@
+body { background:#000; font-family:georgia; overflow:hidden; margin:0; padding:0; }
+h1 { color:white; font-size:5em; text-align:center; font-variant:small-caps; margin:0.5em 0 0 0; text-shadow:white 0px 0px 2px; }
+#screen { padding:0; margin:0; text-align:center; border:solid 0px red; }
+canvas { border:solid 0px yellow; background:url(images/dish.png) -2px 6px }
