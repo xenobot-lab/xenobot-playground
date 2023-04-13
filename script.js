@@ -3,7 +3,8 @@ var CANVAS_SIZE = 400
 var N = 15;
 var PARTICLES = [];
 var IMG = {};
-var SPHERES = ["images/white.png"];
+var SPHERES = ["images/labmascot.png"]; // temporary fix, need to add form for each morphology
+// var PACMAN = ["images/pacman.png"];
 
 function init() {
     CAMERA = new THREE.Camera( 26, 1, 1, 10000 );
@@ -113,6 +114,6 @@ function start() {
     init();
     // currently, all the xenobots have the same speed given by the frame refresh rate
     // we can modify this to simulate actual speed as per the design and position of the bots once we add the force vectors and physics engine
-    setInterval(frame, 15); //change the interval time for different speeds
+    setInterval(frame, 20); //change the interval time for different speeds
 }
 
