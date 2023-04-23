@@ -51,13 +51,13 @@ public class NewBehaviourScript : MonoBehaviour
     void FixedUpdate()
     {
         // transform.position += Vector3.forward * Time.deltaTime;
-        rb.AddRelativeForce(Vector3.forward * 10);
+        rb.AddRelativeForce(Vector3.forward * 30);
     }
 
     void OnCollisionEnter(Collision c) {
         if (c.gameObject.tag == "dish" || c.gameObject.tag == "bot") {
             // how much the character should be knocked back
-            var magnitude = 350;
+            var magnitude = 250;
             // calculate force vector
             var force = transform.position - c.transform.position;
             // normalize force vector to get direction only and trim magnitude

@@ -344,8 +344,10 @@
 -r:"Library/Bee/artifacts/200b0aE.dag/Unity.VSCode.Editor.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/UnityEngine.UI.ref.dll"
+"Assets/ICE_sushishop/scripts_probes/RealtimeReflection.cs"
+"Assets/ICE_sushishop/scripts_probes/RealtimeReflection1.cs"
 "Assets/NewBehaviourScript.cs"
-"Assets/SimpleCollectiblesPack/SimpleCollectibleScript.cs"
+"Assets/NewBehaviourScriptMesh.cs"
 -langversion:9.0
 
 /deterministic
