@@ -6,6 +6,7 @@ TagManager:
   tags:
   - bot
   - dish
+  - particle
   layers:
   - Default
   - TransparentFX
