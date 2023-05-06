@@ -347,7 +347,7 @@
 "Assets/ICE_sushishop/scripts_probes/RealtimeReflection.cs"
 "Assets/ICE_sushishop/scripts_probes/RealtimeReflection1.cs"
 "Assets/NewBehaviourScript.cs"
-"Assets/NewBehaviourScriptMesh.cs"
+"Assets/scripts/CameraMovement.cs"
 -langversion:9.0
 
 /deterministic
