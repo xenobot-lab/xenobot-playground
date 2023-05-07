@@ -21,7 +21,28 @@ public class NewBehaviourScript : MonoBehaviour
             var force = transform.position - c.transform.position;
             // normalize force vector to get direction only and trim magnitude
             force.Normalize();
+            // Debug.Log(force + c.gameObject.tag);
+
             rb.AddForce(-force * magnitude);
         }
+        else if (c.gameObject.tag == "top") {
+            // how much the character should be knocked back
+            var magnitude = -80;
+            // calculate force vector
+            var force = transform.position - c.transform.position;
+            // normalize force vector to get direction only and trim magnitude
+            force.Normalize();
+            // Debug.Log(force + c.gameObject.tag);
+    
+            rb.AddForce(0, magnitude, 0, ForceMode.Force);
+        }
+        if (!rb.useGravity)
+            {
+                if (c.gameObject.tag == "bottom") {
+                var magnitude = 80;
+                // Debug.Log(force + c.gameObject.tag);
+                rb.AddForce(0, magnitude, 0, ForceMode.Force);
+            }
+            }
     }
 }
