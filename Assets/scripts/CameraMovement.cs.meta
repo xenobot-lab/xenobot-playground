@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/scripts/CameraMovement.cs.meta
 guid: 5d891b1dd5b6846f88491937fdc0a9fe
+========
+guid: 4c1027aa2c28f0844a1bde32d46b542b
+>>>>>>>> ad01680e414487f7e94e23bb217ccfd61a5f7a67:Library/PackageCache/com.unity.connect.share@4.2.3/Editor/AssemblyInfo.cs.meta
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
