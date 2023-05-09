@@ -18,7 +18,19 @@ public class GravityScript : MonoBehaviour
     void changeGravityConfig()
     {
         isGravityEnabled = !isGravityEnabled;
-        GetComponent<Image>().color = (isGravityEnabled) ? Color.green : Color.red;
+        //#2F7125
+        //#A9191E
+        Color color = new Color(47f, 113f, 37f);
+        if (isGravityEnabled)
+        {
+            ColorUtility.TryParseHtmlString("#2F7125", out color);
+        }
+        else 
+        {
+            ColorUtility.TryParseHtmlString("#A9191E", out color);
+        }
+        
+        GetComponent<Image>().color = color;
         myObjects = GameObject.FindGameObjectsWithTag("bot") as GameObject[];
 
         for (var i = 0; i < myObjects.Length; i++) {
