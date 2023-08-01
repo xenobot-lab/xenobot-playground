@@ -10,7 +10,7 @@ public class NewBehaviourScript : MonoBehaviour
     void FixedUpdate()
     {
         // transform.position += Vector3.forward * Time.deltaTime;
-        rb.AddRelativeForce(Vector3.forward * 10);
+        rb.AddRelativeForce(Vector3.forward * 12);
     }
 
     void OnCollisionEnter(Collision c) {

@@ -9,6 +9,7 @@ TagManager:
   - particle
   - top
   - bottom
+  - cell
   layers:
   - Default
   - TransparentFX

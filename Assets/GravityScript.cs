@@ -7,7 +7,9 @@ using UnityEngine.Events;
 public class GravityScript : MonoBehaviour
 {
     public Button gravityButton;
-    private GameObject[] myObjects;
+    // private GameObject[] botObjects;
+    // private GameObject[] cellObjects;
+    // private List<GameObject> myObjects;
     private bool isGravityEnabled = true;
     void Start()
     {
@@ -31,11 +33,18 @@ public class GravityScript : MonoBehaviour
         }
         
         GetComponent<Image>().color = color;
-        myObjects = GameObject.FindGameObjectsWithTag("bot") as GameObject[];
+        List<GameObject> myObjects = new List<GameObject> (GameObject.FindGameObjectsWithTag ("bot"));
+        //myObjects.AddRange (new List<GameObject> (GameObject.FindGameObjectsWithTag ("cell")));
+        // botObjects = GameObject.FindGameObjectsWithTag("bot") as GameObject[];
+        // cellObjects= GameObject.FindGameObjectsWithTag("cell");  
+        // myObjects = botObjects.Concat(cellObjects).ToArray();
 
-        for (var i = 0; i < myObjects.Length; i++) {
-            changeConstraints(myObjects[i]);
+        foreach (GameObject obj in myObjects) {
+            changeConstraints(obj);
         }
+        // for (var i = 0; i < myObjects.Length; i++) {
+        //     changeConstraints(myObjects[i]);
+        // }
     }
 
     void changeConstraints(GameObject g)
